@@ -70,6 +70,12 @@ bot.launch({ dropPendingUpdates: true }).catch((e) => {
   Log.error("MAIN", e);
 });
 /**
+ * Start bot service
+ */
+import Service from "./src/service";
+let BotService = new Service(bot);
+BotService.news();
+/**
  * Custom console output function for beautiful formatting
  * Собственная функция вывода в консоль для красивого форматирования
  */

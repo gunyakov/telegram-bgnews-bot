@@ -14,15 +14,15 @@ export var DB = {
   },
   USER: {
     prod: "bot",
-    dev: "goodzon",
+    dev: "develop_bgnews",
   },
   DATABASE: {
     prod: "bot",
-    dev: "bot_test",
+    dev: "develop_bgnews",
   },
   PASSWORD: {
     prod: "",
-    dev: "",
+    dev: "G$ONJ-^pmfMb}K6(",
   },
 };
 export var LOG = {

@@ -78,3 +78,11 @@ export interface Keyboards {
     opts?: Array<string>
   ) => Markup.Markup<ReplyKeyboardMarkup | InlineKeyboardMarkup>;
 }
+
+export interface NewsInfo {
+  ID: number;
+  title: string;
+  image: string | null;
+  video: string | null;
+  news: string;
+}

@@ -5,6 +5,15 @@ import { ExtContext } from "../src/interface";
 export default async (ctx: ExtContext, next: CallableFunction) => {
   console.time(`Processing update ${ctx.update.update_id}`);
 
+  if (!ctx.session) {
+    ctx.session = {
+      userID: 0,
+      chatID: 0,
+      name: "",
+      tgName: "",
+    };
+  }
+
   if (!ctx.session.chatID) {
     if (typeof ctx.message !== "undefined") {
       ctx.session.chatID = ctx.message.from.id;
